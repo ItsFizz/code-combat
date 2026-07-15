@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Events | Travel Smart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="d-flex flex-column">
+
+  <div class="nav-shell">
+    <nav class="navbar navbar-expand-lg navbar-ts">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.svg" alt="Travel Smart" class="brand-logo">
+          Travel Smart
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Travel Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="world-events.html">World Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="travel-concierge.html">Travel Concierge</a></li>
+            <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <header class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1920&q=80');">
+    <div class="page-hero-inner">
+      <div class="brand-mark">
+        <img src="assets/images/logo.svg" alt="" width="56" height="56">
+        <span>Travel Smart</span>
+      </div>
+      <h1>World Events worth packing for</h1>
+      <p>Festivals, races, and cultural moments timed for travelers who plan ahead.</p>
+      <div class="hero-actions">
+        <a href="#events" class="btn btn-ts-primary">View Events</a>
+        <a href="contact-us.html" class="btn btn-ts-secondary">Ask About Tickets</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="events" class="section-pad">
+    <div class="container">
+      <div class="row align-items-end mb-4 reveal">
+        <div class="col-md-8">
+          <h2 class="section-title">Upcoming highlights</h2>
+          <p class="section-lead mb-0">Filter by region to focus your calendar.</p>
+        </div>
+        <div class="col-md-4 mt-3 mt-md-0">
+          <label for="eventRegion" class="form-label">Region</label>
+          <select id="eventRegion" class="form-select">
+            <option value="all">All regions</option>
+            <option value="europe">Europe</option>
+            <option value="asia">Asia</option>
+            <option value="americas">Americas</option>
+            <option value="oceania">Oceania</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="event-row" data-region="europe">
+          <div class="event-date">
+            <span class="month">Aug</span>
+            <span class="day">15</span>
+          </div>
+          <div>
+            <h3 class="h5 mb-1">Edinburgh Festival Fringe</h3>
+            <p class="event-meta">Edinburgh, Scotland · Arts &amp; comedy · 3 weeks</p>
+          </div>
+          <div class="event-action">
+            <button type="button" class="btn btn-ts-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#eventModal" data-title="Edinburgh Festival Fringe" data-detail="Street stages, theater, and late-night sets fill the city every August. We arrange central stays and guided venue hopping.">Details</button>
+          </div>
+        </div>
+
+        <div class="event-row" data-region="asia">
+          <div class="event-date">
+            <span class="month">Sep</span>
+            <span class="day">21</span>
+          </div>
+          <div>
+            <h3 class="h5 mb-1">Mid-Autumn Lantern Nights</h3>
+            <p class="event-meta">Hong Kong · Culture · 5 days</p>
+          </div>
+          <div class="event-action">
+            <button type="button" class="btn btn-ts-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#eventModal" data-title="Mid-Autumn Lantern Nights" data-detail="Harbor views, mooncakes, and glowing parks. Ideal for couples and families who want a soft cultural deep-dive.">Details</button>
+          </div>
+        </div>
+
+        <div class="event-row" data-region="americas">
+          <div class="event-date">
+            <span class="month">Oct</span>
+            <span class="day">03</span>
+          </div>
+          <div>
+            <h3 class="h5 mb-1">Rio Jazz &amp; Beach Sessions</h3>
+            <p class="event-meta">Rio de Janeiro, Brazil · Music · Weekend</p>
+          </div>
+          <div class="event-action">
+            <button type="button" class="btn btn-ts-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#eventModal" data-title="Rio Jazz & Beach Sessions" data-detail="Sunset sets on the sand plus downtown clubs. We pair flights with neighborhood tips so you stay close to the sound.">Details</button>
+          </div>
+        </div>
+
+        <div class="event-row" data-region="oceania">
+          <div class="event-date">
+            <span class="month">Nov</span>
+            <span class="day">12</span>
+          </div>
+          <div>
+            <h3 class="h5 mb-1">Sydney Harbour Marathon Week</h3>
+            <p class="event-meta">Sydney, Australia · Sports · 7 days</p>
+          </div>
+          <div class="event-action">
+            <button type="button" class="btn btn-ts-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#eventModal" data-title="Sydney Harbour Marathon Week" data-detail="Race day plus recovery stays near the harbour. Training walks and post-race dining routes included in our concierge pack.">Details</button>
+          </div>
+        </div>
+
+        <div class="event-row" data-region="europe">
+          <div class="event-date">
+            <span class="month">Dec</span>
+            <span class="day">05</span>
+          </div>
+          <div>
+            <h3 class="h5 mb-1">Vienna Christmas Markets</h3>
+            <p class="event-meta">Vienna, Austria · Seasonal · 4 weeks</p>
+          </div>
+          <div class="event-action">
+            <button type="button" class="btn btn-ts-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#eventModal" data-title="Vienna Christmas Markets" data-detail="Mulled wine, lights, and palace courtyards. We book stays with easy tram access to the busiest markets.">Details</button>
+          </div>
+        </div>
+
+        <div class="event-row" data-region="asia">
+          <div class="event-date">
+            <span class="month">Jan</span>
+            <span class="day">18</span>
+          </div>
+          <div>
+            <h3 class="h5 mb-1">Jaipur Literature Festival</h3>
+            <p class="event-meta">Jaipur, India · Books &amp; ideas · 5 days</p>
+          </div>
+          <div class="event-action">
+            <button type="button" class="btn btn-ts-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#eventModal" data-title="Jaipur Literature Festival" data-detail="Authors, debates, and pink-city evenings. Heritage hotels and quiet reading hours are part of our usual booking flow.">Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="section-pad section-alt">
+    <div class="container text-center reveal">
+      <h2 class="section-title">Want seats before they sell out?</h2>
+      <p class="section-lead mx-auto">Our concierge watches event calendars and builds travel around the date you care about.</p>
+      <a href="travel-concierge.html" class="btn btn-ts-primary">Build Event Trip</a>
+    </div>
+  </section>
+
+  <div class="modal fade" id="eventModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="eventModalTitle">Event</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="eventModalBody"></div>
+        <div class="modal-footer">
+          <a href="travel-concierge.html" class="btn btn-ts-primary">Book via Concierge</a>
+          <button type="button" class="btn btn-ts-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <div class="footer-brand">
+            <img src="assets/images/logo.svg" alt="" width="36" height="36">
+            Travel Smart
+          </div>
+          <p>Plan wiser. Travel better. Discover more.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Explore</h5>
+          <a href="index.html">Travel Gallery</a>
+          <a href="world-events.html">World Events</a>
+          <a href="travel-concierge.html">Travel Concierge</a>
+        </div>
+        <div class="col-md-4">
+          <h5>Company</h5>
+          <a href="about-us.html">About Us</a>
+          <a href="contact-us.html">Contact Us</a>
+          <a href="feedback.html">Feedback</a>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        &copy; 2026 Travel Smart. Frontend demo project.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    $("#eventModal").on("show.bs.modal", function (e) {
+      var btn = $(e.relatedTarget);
+      $("#eventModalTitle").text(btn.data("title"));
+      $("#eventModalBody").text(btn.data("detail"));
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Concierge | Travel Smart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="d-flex flex-column">
+
+  <div class="nav-shell">
+    <nav class="navbar navbar-expand-lg navbar-ts">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.svg" alt="Travel Smart" class="brand-logo">
+          Travel Smart
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Travel Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="world-events.html">World Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="travel-concierge.html">Travel Concierge</a></li>
+            <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <header class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80');">
+    <div class="page-hero-inner">
+      <div class="brand-mark">
+        <img src="assets/images/logo.svg" alt="" width="56" height="56">
+        <span>Travel Smart</span>
+      </div>
+      <h1>Your personal Travel Concierge</h1>
+      <p>One planner. Clear packages. Routes built around how you actually like to travel.</p>
+      <div class="hero-actions">
+        <a href="#packages" class="btn btn-ts-primary">See Packages</a>
+        <a href="#inquiry" class="btn btn-ts-secondary">Request a Plan</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="packages" class="section-pad">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section-title">Concierge packages</h2>
+        <p class="section-lead">Pick a starting tier — we customize flights, stays, and day plans after you inquire.</p>
+      </div>
+
+      <div class="package-block reveal">
+        <div class="row align-items-center gy-3">
+          <div class="col-lg-7">
+            <h3 class="h4">City Sprint</h3>
+            <p>Three days in one capital: transit passes, one signature meal, and a photo route from our gallery.</p>
+            <ul class="feature-list">
+              <li>Hotel near metro / train</li>
+              <li>Half-day guided walk</li>
+              <li>Airport transfer checklist</li>
+            </ul>
+          </div>
+          <div class="col-lg-5 text-lg-end">
+            <div class="package-price">From $499</div>
+            <p class="mb-3">per person · economy travel</p>
+            <a href="#inquiry" class="btn btn-ts-primary">Choose City Sprint</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="package-block reveal">
+        <div class="row align-items-center gy-3">
+          <div class="col-lg-7">
+            <h3 class="h4">Coast &amp; Calm</h3>
+            <p>Beach-first weeks with spa windows, sunset dinner slots, and slow mornings on purpose.</p>
+            <ul class="feature-list">
+              <li>Ocean-view stay options</li>
+              <li>One boat or snorkel day</li>
+              <li>Flexible downtime blocks</li>
+            </ul>
+          </div>
+          <div class="col-lg-5 text-lg-end">
+            <div class="package-price">From $1,290</div>
+            <p class="mb-3">per person · 6–8 nights</p>
+            <a href="#inquiry" class="btn btn-ts-primary">Choose Coast &amp; Calm</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="package-block reveal">
+        <div class="row align-items-center gy-3">
+          <div class="col-lg-7">
+            <h3 class="h4">Festival Plus</h3>
+            <p>Built around a World Event date: tickets coordination, nearby lodging, and day-after recovery plans.</p>
+            <ul class="feature-list">
+              <li>Event-week lodging priority</li>
+              <li>Local host introduction</li>
+              <li>Backup wet-weather plan</li>
+            </ul>
+          </div>
+          <div class="col-lg-5 text-lg-end">
+            <div class="package-price">From $1,850</div>
+            <p class="mb-3">per person · event dependent</p>
+            <a href="#inquiry" class="btn btn-ts-primary">Choose Festival Plus</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section id="inquiry" class="section-pad section-alt">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 reveal">
+          <h2 class="section-title">Request a custom plan</h2>
+          <p class="section-lead">Fill every required field — we validate on submit before showing a success message (frontend only).</p>
+          <div id="conciergeAlert" class="alert alert-ts d-none mb-3" role="alert"></div>
+          <form id="conciergeForm" class="form-panel" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="guestName" class="form-label">Full name *</label>
+                <input type="text" class="form-control" id="guestName" name="guestName" required placeholder="Your name" autocomplete="name">
+                <div class="invalid-feedback" id="guestNameError">Please enter your full name (at least 2 characters).</div>
+              </div>
+              <div class="col-md-6">
+                <label for="guestEmail" class="form-label">Email *</label>
+                <input type="email" class="form-control" id="guestEmail" name="guestEmail" required placeholder="you@email.com" autocomplete="email">
+                <div class="invalid-feedback" id="guestEmailError">Please enter a valid email address.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="destInterest" class="form-label">Destination interest *</label>
+                <input type="text" class="form-control" id="destInterest" name="destInterest" required placeholder="e.g. Tokyo, Bali, Vienna">
+                <div class="invalid-feedback" id="destInterestError">Please tell us which destination you are interested in.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="packagePick" class="form-label">Package *</label>
+                <select class="form-select" id="packagePick" name="packagePick" required>
+                  <option value="">Select a package</option>
+                  <option value="city">City Sprint</option>
+                  <option value="coast">Coast &amp; Calm</option>
+                  <option value="festival">Festival Plus</option>
+                  <option value="custom">Fully custom</option>
+                </select>
+                <div class="invalid-feedback" id="packagePickError">Please select a package.</div>
+              </div>
+              <div class="col-12">
+                <label for="tripNotes" class="form-label">Notes *</label>
+                <textarea class="form-control" id="tripNotes" name="tripNotes" rows="4" required placeholder="Dates, budget, must-see stops…"></textarea>
+                <div class="invalid-feedback" id="tripNotesError">Please add notes (at least 10 characters) about dates, budget, or preferences.</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-ts-primary">Send request</button>
+                <a href="world-events.html" class="btn btn-ts-secondary ms-2">Browse events</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <div class="footer-brand">
+            <img src="assets/images/logo.svg" alt="" width="36" height="36">
+            Travel Smart
+          </div>
+          <p>Plan wiser. Travel better. Discover more.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Explore</h5>
+          <a href="index.html">Travel Gallery</a>
+          <a href="world-events.html">World Events</a>
+          <a href="travel-concierge.html">Travel Concierge</a>
+        </div>
+        <div class="col-md-4">
+          <h5>Company</h5>
+          <a href="about-us.html">About Us</a>
+          <a href="contact-us.html">Contact Us</a>
+          <a href="feedback.html">Feedback</a>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        &copy; 2026 Travel Smart. Frontend demo project.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

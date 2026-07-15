@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Gallery | Travel Smart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="d-flex flex-column">
+
+  <div class="nav-shell">
+    <nav class="navbar navbar-expand-lg navbar-ts">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.svg" alt="Travel Smart" class="brand-logo">
+          Travel Smart
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Travel Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="world-events.html">World Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="travel-concierge.html">Travel Concierge</a></li>
+            <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <header class="page-hero" style="background-image: url('assets/images/gallery/hero.jpg');">
+    <div class="page-hero-inner">
+      <div class="brand-mark">
+        <img src="assets/images/logo.svg" alt="" width="56" height="56">
+        <span>Travel Smart</span>
+      </div>
+      <h1>Destinations worth the journey</h1>
+      <p>Explore curated places from coastlines to capitals — filter by vibe and open any shot full-screen.</p>
+      <div class="hero-actions">
+        <a href="#gallery" class="btn btn-ts-primary">Browse Gallery</a>
+        <a href="travel-concierge.html" class="btn btn-ts-secondary">Plan a Trip</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="gallery" class="section-pad">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section-title">Travel Gallery</h2>
+        <p class="section-lead">Handpicked frames from trips we help plan. Click any photo to open details.</p>
+      </div>
+
+      <div class="filter-bar mb-4 reveal">
+        <button type="button" class="btn btn-ts-secondary btn-sm active" data-filter="all">All</button>
+        <button type="button" class="btn btn-ts-secondary btn-sm" data-filter="beach">Beach</button>
+        <button type="button" class="btn btn-ts-secondary btn-sm" data-filter="city">City</button>
+        <button type="button" class="btn btn-ts-secondary btn-sm" data-filter="mountain">Mountain</button>
+        <button type="button" class="btn btn-ts-secondary btn-sm" data-filter="culture">Culture</button>
+      </div>
+
+      <div class="row" id="galleryGrid">
+        <!-- Beach -->
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="beach">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/maldives.jpg" alt="Maldives" loading="lazy">
+            <div class="gallery-caption">Maldives · Overwater villas</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="beach">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/bali.jpg" alt="Bali" loading="lazy">
+            <div class="gallery-caption">Bali, Indonesia · Coastline</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="beach">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/santorini.jpg" alt="Santorini" loading="lazy">
+            <div class="gallery-caption">Santorini, Greece · Caldera</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="beach">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/beach-phuket.jpg" alt="Phuket" loading="lazy">
+            <div class="gallery-caption">Phuket, Thailand · Turquoise bay</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="beach">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/beach-hawaii.jpg" alt="Hawaii" loading="lazy">
+            <div class="gallery-caption">Hawaii, USA · Pacific shore</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="beach">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/beach-seychelles.jpg" alt="Seychelles" loading="lazy">
+            <div class="gallery-caption">Seychelles · Granite beach</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="beach">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/beach-bondi.jpg" alt="Bondi Beach" loading="lazy">
+            <div class="gallery-caption">Bondi, Australia · Surf beach</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="beach">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/beach-miami.jpg" alt="Miami Beach" loading="lazy">
+            <div class="gallery-caption">Miami, USA · Ocean Drive vibes</div>
+          </div>
+        </div>
+
+        <!-- City -->
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="city">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/paris.jpg" alt="Paris" loading="lazy">
+            <div class="gallery-caption">Paris, France · Eiffel Tower</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="city">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/tokyo.jpg" alt="Tokyo" loading="lazy">
+            <div class="gallery-caption">Tokyo, Japan · Neon nights</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="city">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/newyork.jpg" alt="New York" loading="lazy">
+            <div class="gallery-caption">New York, USA · Skyline</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="city">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/dubai.jpg" alt="Dubai" loading="lazy">
+            <div class="gallery-caption">Dubai, UAE · Burj Khalifa</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="city">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/london.jpg" alt="London" loading="lazy">
+            <div class="gallery-caption">London, UK · Big Ben</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="city">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/sydney.jpg" alt="Sydney" loading="lazy">
+            <div class="gallery-caption">Sydney, Australia · Opera House</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="city">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/city-singapore.jpg" alt="Singapore" loading="lazy">
+            <div class="gallery-caption">Singapore · Marina skyline</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="city">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/city-hongkong.jpg" alt="Hong Kong" loading="lazy">
+            <div class="gallery-caption">Hong Kong · Harbour lights</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="city">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/city-barcelona.jpg" alt="Barcelona" loading="lazy">
+            <div class="gallery-caption">Barcelona, Spain · City streets</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="city">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/city-seoul.jpg" alt="Seoul" loading="lazy">
+            <div class="gallery-caption">Seoul, South Korea · Night city</div>
+          </div>
+        </div>
+
+        <!-- Mountain -->
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="mountain">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/swiss-alps.jpg" alt="Swiss Alps" loading="lazy">
+            <div class="gallery-caption">Swiss Alps · Matterhorn</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="mountain">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/patagonia.jpg" alt="Patagonia" loading="lazy">
+            <div class="gallery-caption">Patagonia · Andes ridges</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="mountain">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/machu.jpg" alt="Machu Picchu mountains" loading="lazy">
+            <div class="gallery-caption">Peru · Andean peaks</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="mountain">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/iceland.jpg" alt="Iceland" loading="lazy">
+            <div class="gallery-caption">Iceland · Waterfall valleys</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="mountain">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/mountain-nepal.jpg" alt="Himalayas Nepal" loading="lazy">
+            <div class="gallery-caption">Nepal · Himalayan trail</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="mountain">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/mountain-banff.jpg" alt="Banff Canada" loading="lazy">
+            <div class="gallery-caption">Banff, Canada · Lake peaks</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="mountain">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/mountain-fuji.jpg" alt="Mount Fuji" loading="lazy">
+            <div class="gallery-caption">Japan · Mount Fuji</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="mountain">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/mountain-rocky.jpg" alt="Rocky Mountains" loading="lazy">
+            <div class="gallery-caption">Rocky Mountains · Alpine view</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="mountain">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/capetown.jpg" alt="Table Mountain" loading="lazy">
+            <div class="gallery-caption">Cape Town · Table Mountain</div>
+          </div>
+        </div>
+
+        <!-- Culture -->
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="culture">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/taj-mahal.jpg" alt="Taj Mahal" loading="lazy">
+            <div class="gallery-caption">Agra, India · Taj Mahal</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="culture">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/rome.jpg" alt="Colosseum" loading="lazy">
+            <div class="gallery-caption">Rome, Italy · Colosseum</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="culture">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/cairo.jpg" alt="Pyramids" loading="lazy">
+            <div class="gallery-caption">Cairo, Egypt · Pyramids</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="culture">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/istanbul.jpg" alt="Blue Mosque" loading="lazy">
+            <div class="gallery-caption">Istanbul, Turkey · Blue Mosque</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="culture">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/culture-petra.jpg" alt="Petra" loading="lazy">
+            <div class="gallery-caption">Petra, Jordan · Treasure tomb</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="culture">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/culture-angkor.jpg" alt="Angkor Wat" loading="lazy">
+            <div class="gallery-caption">Siem Reap · Angkor Wat</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="culture">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/culture-athens.jpg" alt="Acropolis" loading="lazy">
+            <div class="gallery-caption">Athens, Greece · Acropolis</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="culture">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/culture-kyoto.jpg" alt="Kyoto temple" loading="lazy">
+            <div class="gallery-caption">Kyoto, Japan · Temple gardens</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 gallery-card" data-category="culture">
+          <div class="gallery-item">
+            <img src="assets/images/gallery/culture-machu2.jpg" alt="Machu Picchu citadel" loading="lazy">
+            <div class="gallery-caption">Cusco, Peru · Machu Picchu</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="section-pad section-alt">
+    <div class="container text-center reveal">
+      <h2 class="section-title">Ready for your next frame?</h2>
+      <p class="section-lead mx-auto">Tell our concierge what you love — beaches, festivals, or quiet mountains — and we map the trip.</p>
+      <a href="travel-concierge.html" class="btn btn-ts-primary">Talk to Concierge</a>
+    </div>
+  </section>
+
+  <!-- Gallery detail modal -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content gallery-modal">
+        <div class="modal-header">
+          <h2 class="modal-title h4" id="galleryModalTitle">Destination</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3 align-items-start">
+            <div class="col-md-6">
+              <img id="galleryModalImg" class="gallery-modal-img" src="" alt="">
+            </div>
+            <div class="col-md-6">
+              <span id="galleryModalCategory" class="gallery-modal-badge"></span>
+              <p id="galleryModalLocation" class="gallery-modal-location mb-2"></p>
+              <p id="galleryModalDesc" class="mb-3"></p>
+              <ul class="gallery-modal-meta list-unstyled mb-0">
+                <li><strong>Best time:</strong> <span id="galleryModalBest"></span></li>
+                <li><strong>Highlight:</strong> <span id="galleryModalHighlight"></span></li>
+                <li><strong>Vibe:</strong> <span id="galleryModalVibe"></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="travel-concierge.html" class="btn btn-ts-primary">Plan this trip</a>
+          <button type="button" class="btn btn-ts-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <div class="footer-brand">
+            <img src="assets/images/logo.svg" alt="" width="36" height="36">
+            Travel Smart
+          </div>
+          <p>Plan wiser. Travel better. Discover more.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Explore</h5>
+          <a href="index.html">Travel Gallery</a>
+          <a href="world-events.html">World Events</a>
+          <a href="travel-concierge.html">Travel Concierge</a>
+        </div>
+        <div class="col-md-4">
+          <h5>Company</h5>
+          <a href="about-us.html">About Us</a>
+          <a href="contact-us.html">Contact Us</a>
+          <a href="feedback.html">Feedback</a>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        &copy; 2026 Travel Smart. Frontend demo project.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

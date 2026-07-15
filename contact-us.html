@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Travel Smart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="d-flex flex-column">
+
+  <div class="nav-shell">
+    <nav class="navbar navbar-expand-lg navbar-ts">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.svg" alt="Travel Smart" class="brand-logo">
+          Travel Smart
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Travel Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="world-events.html">World Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="travel-concierge.html">Travel Concierge</a></li>
+            <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <header class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1920&q=80');">
+    <div class="page-hero-inner">
+      <div class="brand-mark">
+        <img src="assets/images/logo.svg" alt="" width="56" height="56">
+        <span>Travel Smart</span>
+      </div>
+      <h1>Contact Us</h1>
+      <p>Questions about packages, events, or a custom route? Send a note — we reply with clear next steps.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-ts-primary">Write to Us</a>
+        <a href="travel-concierge.html" class="btn btn-ts-secondary">Concierge Desk</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="contact" class="section-pad">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 reveal">
+          <h2 class="section-title">Reach Travel Smart</h2>
+          <p class="section-lead">Office hours: Mon–Sat, 10:00–19:00 (PKT).</p>
+          <ul class="contact-info-list">
+            <li>
+              <strong>Email</strong>
+              hello@travelsmart.demo
+            </li>
+            <li>
+              <strong>Phone</strong>
+              +92 300 000 0000
+            </li>
+            <li>
+              <strong>Studio</strong>
+              Suite 4, Horizon Plaza, Karachi
+            </li>
+            <li>
+              <strong>Social</strong>
+              @travelsmart · travelsmart.demo
+            </li>
+          </ul>
+          <a href="feedback.html" class="btn btn-ts-secondary mt-2">Share Feedback instead</a>
+        </div>
+        <div class="col-lg-7 reveal">
+          <div id="contactAlert" class="alert alert-ts d-none mb-3" role="alert"></div>
+          <form id="contactForm" class="form-panel" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="contactName" class="form-label">Name *</label>
+                <input type="text" class="form-control" id="contactName" required placeholder="Your name">
+              </div>
+              <div class="col-md-6">
+                <label for="contactEmail" class="form-label">Email *</label>
+                <input type="email" class="form-control" id="contactEmail" required placeholder="you@email.com">
+              </div>
+              <div class="col-12">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <select class="form-select" id="contactSubject">
+                  <option value="general">General question</option>
+                  <option value="booking">Booking help</option>
+                  <option value="events">World events</option>
+                  <option value="partnership">Partnership</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="contactMessage" class="form-label">Message *</label>
+                <textarea class="form-control" id="contactMessage" rows="5" required placeholder="How can we help?"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-ts-primary">Send message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="section-pad section-alt">
+    <div class="container reveal">
+      <h2 class="section-title text-center mb-4">Find our studio</h2>
+      <div class="ratio ratio-21x9" style="border-radius: 8px; overflow: hidden; border: 1px solid rgba(56,189,248,0.25);">
+        <iframe
+          title="Travel Smart location map"
+          src="https://maps.google.com/maps?q=Karachi&t=&z=12&ie=UTF8&iwloc=&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          style="border:0;"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <div class="footer-brand">
+            <img src="assets/images/logo.svg" alt="" width="36" height="36">
+            Travel Smart
+          </div>
+          <p>Plan wiser. Travel better. Discover more.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Explore</h5>
+          <a href="index.html">Travel Gallery</a>
+          <a href="world-events.html">World Events</a>
+          <a href="travel-concierge.html">Travel Concierge</a>
+        </div>
+        <div class="col-md-4">
+          <h5>Company</h5>
+          <a href="about-us.html">About Us</a>
+          <a href="contact-us.html">Contact Us</a>
+          <a href="feedback.html">Feedback</a>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        &copy; 2026 Travel Smart. Frontend demo project.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
